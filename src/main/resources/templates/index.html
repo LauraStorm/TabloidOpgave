@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B.T nyheder</title>
+
+    <style>
+
+        .logo{
+            padding-top: 30px;
+            padding-bottom: 0px;
+            position: relative;
+            justify-content: center;
+            display: flex;
+            margin: 0px;
+            color: red;
+            font-size: 30px;
+            font-family: bold;
+        }
+
+        .choises-bar{
+            display: flex;
+            justify-content: space-around;
+            font-family: "Arial Black";
+            border-bottom: 1px solid rgba(33,33,33,.2);
+        }
+
+        .article{           /* Formatet uden tekst*/
+            padding: 10px;
+            height: 300px;
+            width: 400px;
+            margin: 15px;
+
+        }
+        .article-one {
+            background-color: #ffdf4a;
+        }
+
+        .article-two{
+            background-color: #ffdf4a;
+        }
+
+        .article-three img {
+            width: 400px;
+            height: 350px;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        h4{
+            text-transform: uppercase;   /* vi laver teksten til Store bogstaver*/
+            font-style: italic;         /* teksten bliver skrevet skråt */
+            font-family: "Arial Black"; /* Skrifttypen:*/
+            text-align: left;
+            position: relative;
+            left: 20px;
+            padding: 0;
+        }
+
+        h1{
+            font-size: 50px;
+            font-family: "Arial Black"; /* Skrifttypen:*/
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="logo">
+        <h3>B.T</h3>
+    </div>
+
+    <div class="choises-bar">
+        <p>Nyheder</p>
+        <p>Sport</p>
+        <p>Underholdning</p>
+    </div>
+
+    <!-- Første article class -->
+    <div class="article article-one">
+        <h4>Live</h4>
+
+      <h1>Hun havde for højt
+            <span style="color: red;">blodtryk</span>
+      </h1>
+
+    </div>
+
+    <!-- Anden article class -->
+    <div class="article article-two ">
+
+        <h4>Live / Virus</h4>
+        <h1><span style="color: red;">LIGE NU</span> Ekspert reagerer</h1>
+    </div>
+
+    <!-- tredje article med et billede -->
+    <div class=" article article-three">
+       <!-- <img src="../static/krig.jpeg">        denne skal køre når du bruger html filen og køre via den server-->
+        <img src="krig.jpeg">    <!-- denne skal bruges når Spring køres (localhost) -->
+
+    </div>
+
+</body>
+</html>
